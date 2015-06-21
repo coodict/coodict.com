@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Gist like snippets app  build with React",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --hot --progress --colors --port 9000 --display-error-details --content-base app/build",
+    "build": "NODE_ENV=production webpack -p --display-error-details"
   },
   "repository": {
     "type": "git",
