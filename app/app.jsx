@@ -49,7 +49,7 @@ var CobbleApp = React.createClass({
     });
   },
   render: function () {
-    var githubClientUrl = 'https://github.com/login/oauth/authorize?scope=user:email&client_id=a965d4ca2cd64c6d0859';
+    var githubClientUrl = 'https://github.com/login/oauth/authorize?scope=user:email&client_id=1fa79ddefcd10a6ccd5f';
     var userArea;
     if (this.state.user.isLogedin) {
       userArea = (

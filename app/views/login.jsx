@@ -70,7 +70,7 @@ var Login = React.createClass({
      </form>
     );
     form = (
-      <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=a965d4ca2cd64c6d0859">Login with Github</a>
+      <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=1fa79ddefcd10a6ccd5f">Login with Github</a>
     )
     return (
       <Row className="LoginContainer">
