@@ -12,9 +12,9 @@ var Footer  = React.createClass({
           <Col md={4}>
             <ul className='footerUl'>
               <li>© 2015 Coodict.com</li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Donation</a></li>
-              <li><a href="#">Github</a></li>
+              <li><a href="https://github.com/coodict/coodict.com/wiki/About">About</a></li>
+              <li><a href="https://github.com/coodict/coodict.com/wiki/Donation">Donation</a></li>
+              <li><a href="https://github.com/coodict/coodict.com">Github</a></li>
             </ul>
           </Col>
           <Col md={4}>
