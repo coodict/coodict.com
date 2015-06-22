@@ -1,6 +1,6 @@
 var req = require('reqwest');
 
-var HOST = 'http://127.0.0.1:3000';
+var HOST = 'http://webapi.coodict.com';
 var AJAX = function (opt) {
 
   var options = {

@@ -6,7 +6,7 @@ var spellStore  = require('../stores/spellStore');
 
 
 // Setup module url
-var ACE_HOST = 'http://127.0.0.1:3000/brace/mode/';
+var ACE_HOST = 'http://webapi.coodict.com/brace/mode/';
 for (var k in require('../mixins/lang').MODE_LABEL_MAP) {
   ace.config.setModuleUrl('ace/mode/'+k, ACE_HOST+k+'.js');
 }
