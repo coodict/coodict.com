@@ -63,8 +63,8 @@ var Login = React.createClass({
     );
     var form = (
       <form onSubmit={this.login}>
-       <Input type='text' ref='name' required placeholder='邮箱/ID' />
-       <Input type='password' ref='pass' required placeholder='密码' />
+       <Input type='text' ref='name' required placeholder='Username/ID' />
+       <Input type='password' ref='pass' required placeholder='Password' />
        {this.state.err ? alert : ""}
        <Button type='submit' bsStyle='primary' block ref='submit'>登录</Button>
      </form>
@@ -76,7 +76,7 @@ var Login = React.createClass({
       <Row className="LoginContainer">
         <Col md={4}></Col>
         <Col md={4} xs={12}>
-          <Panel header='登录' bsStyle='primary' className="Login" >
+          <Panel header='Login' bsStyle='primary' className="Login" >
             { this.state.loading ? <Spinner /> : form }
           </Panel>
         </Col>

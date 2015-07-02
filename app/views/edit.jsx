@@ -134,7 +134,7 @@ var CreateCobb = React.createClass({
             multi={true}
             ignoreCase={false}
             options={this.state.user.info.tags}
-            placeholder='添加标签'
+            placeholder='Add labels'
             onChange={this.addTags}
             allowCreate={true}
             value={this.state.tags}
@@ -153,7 +153,7 @@ var CreateCobb = React.createClass({
       <Panel md={12}>
         <Row>
           <Col md={9} xs={8}>
-            <Input type="text" ref="desc" defaultValue={this.state.name} placeholder="描述" />
+            <Input type="text" ref="desc" defaultValue={this.state.name} placeholder="Description" />
           </Col>
           <Col md={3} xs={4}>
             <Select

@@ -132,9 +132,9 @@ var Profile = React.createClass({
         {spells}
       </div>
     );
-    var sorts = [{label: "最近", value: "late"},
-        {label: "最早", value: "earl"},
-        {label: "最多浏览", value: "view"},
+    var sorts = [{label: "Latest", value: "late"},
+        {label: "Earliest", value: "earl"},
+        {label: "Most viewed", value: "view"},
         ];
     var langs = this.state.LMT.langs.map(function (lang) {
       return {label: lang.label, value: lang.mode};
@@ -144,7 +144,7 @@ var Profile = React.createClass({
         bsStyle='success'
         block
         onClick={this.loadMore}
-        disabled={this.state.allLoaded ? true : false}>{this.state.allLoaded ? "全部加载完成" : '加载更多...'}</Button>
+        disabled={this.state.allLoaded ? true : false}>{this.state.allLoaded ? "Loading complete" : "Load more..."}</Button>
     );
     return (
       <Row>
@@ -164,8 +164,8 @@ var Profile = React.createClass({
               <Col md={3}>
                 <Select className='filterLang'
                   clearable={false}
-                  placeholder='语言'
-                  value={this.state.query.lang == '' ? '语言' : this.state.query.lang}
+                  placeholder='Language'
+                  value={this.state.query.lang == '' ? 'Language' : this.state.query.lang}
                   disabled={this.state.LMT.langs.length ? false : true}
                   options={langs}
                   onChange={this.filterLang}
@@ -174,15 +174,15 @@ var Profile = React.createClass({
               <Col md={3}>
                 <Select className='filterTag'
                   clearable={false}
-                  placeholder='标签'
-                  value={this.state.query.tag == '' ? '标签' : this.state.query.tag}
+                  placeholder='Label'
+                  value={this.state.query.tag == '' ? 'Label' : this.state.query.tag}
                   disabled={this.state.LMT.tags.length ? false : true}
                   options={this.state.LMT.tags}
                   onChange={this.filterTag}
                   />
               </Col>
               <Col md={2}>
-                <Button bsStyle='primary' onClick={this.reset}>重置</Button>
+                <Button bsStyle='primary' onClick={this.reset}>"Reset filter"</Button>
               </Col>
             </Row>
           </div>

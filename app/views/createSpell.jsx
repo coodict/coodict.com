@@ -82,9 +82,9 @@ var Create = React.createClass({
   createSpell: function (flag) {
     var content  = this.refs.editor.getValue();
     if (content.length == 0) {
-      alert("内容不能为空");
+      alert("The gist cannot be empty");
     }else if (content.length > 20480) {
-      alert("长度暂时不能超过20480");
+      alert("The gist is too long");
     }else{
       this.setState({
         loading: true,
@@ -120,7 +120,7 @@ var Create = React.createClass({
           <Select
             multi={true}
             ignoreCase={false}
-            placeholder='添加标签'
+            placeholder='Add labels'
             onChange={this.onAddTag}
             value={tags.length > 0 ? tags : null}
             allowCreate={true}
@@ -130,12 +130,12 @@ var Create = React.createClass({
         <Col md={3} xs={6}>
           <Button ref="priBtn" block
                 onClick={this.createSpell.bind(this, 'private')}
-                bsStyle="primary">私有</Button>
+                bsStyle="primary">Private</Button>
         </Col>
         <Col md={3} xs={6}>
           <Button ref="pubBtn" block
                 onClick={this.createSpell.bind(this, 'public')}
-                bsStyle="success">公开</Button>
+                bsStyle="success">Public</Button>
         </Col>
       </Row>
     );
