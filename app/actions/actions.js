@@ -60,7 +60,7 @@ actions.login.listen(function (data) {
 });
 actions.register.listen(function (data) {
   if (data.name.length < 3) {
-    actions.loginError("用户名太短：>= 3");
+    actions.loginError("The username is too short");
     return;
   }
   req({
